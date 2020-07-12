@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #myBtn {
+        margin-left: 770px;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div style=" width:100%; height: 1200px; background-image: url(images/BG_main.jpg); background-repeat: no-repeat; background-attachment:fixed; background-position: center;">
+            <div style="background-color: rgba(60, 57, 63, 0.452); width:100%; height: 1200px;">
+                <div>
+                    <img src="images/icon.png" style="height: 200px; margin: 25px;">
+                </div>
+                <div style="text-align: center;">
+                    <h1 style="color: white; display: inline-block; font-family: 'Just Another Hand', cursive; font-size: 150px;">NETFLIX REVIEW</h1>
+                </div>   
+                <button id="myBtn"><img src="images/icon2.gif" style="width: 200px;"></button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                    </div>
+                    <div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                    </div>
+                    <div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                        <div style="display:inline-block"></div>
+                    </div>
+                </div>  
+            </div>
+            <div></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
