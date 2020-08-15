@@ -1,58 +1,71 @@
-<form>
-    <table>
-        <tr>
-            <td>
-                Name :
-            </td>
-            <td>
-                <input type="text" placeholder="Name" name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Password:
-            </td>
-            <td>
-                <input type="password" placeholder="Password" name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Gender :
-            </td>
-            <td>
-                <input type="radio" name="Gender">Male
-                <input type="radio" name="Gender">Female
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Email :
-            </td>
-            <td>
-                <input type="mail" placeholder="Email" name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Phone Number :
-            </td>
-            <td>
-                <select>
-                    <option>+84</option>
-                    <option>+44</option>
-                    <option>+34</option>
-                    <option>+1</option>
-                    
-                </select>
-                <input type="Phone" placeholder="+8496*****" name="">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="Submit" value="Submit" name="">
-            </td>
-        </tr>
-    </table>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Name :
+                </td>
+                <td>
+                    <input type="text" id="c1" placeholder="Name" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" id="c2" placeholder="Password" name="">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Email :
+                </td>
+                <td>
+                    <input type="mail" id="c5" placeholder="Email" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number :
+                </td>
+                <td>
+                    <select>
+                        <option>+84</option>
+                        <option>+44</option>
+                        <option>+34</option>
+                        <option>+1</option>
+                        
+                    </select>
+                    <input type="Phone" id="c6" placeholder="+8496*****" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit"  value="Submit" name="" onclick="datasubmit()"> 
+                        Submit
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+<script src="../statics/module/formData.js"></script>
+</body>
+</html>

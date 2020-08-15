@@ -13,30 +13,14 @@ var firebaseConfig = {
   firebase.analytics();
   const moviesdata = firebase.database().ref("filmdata")
 
-  let alldata=[];
+  const onSetdata = moviesdata.push();
 
-  moviesdata.on("value",function(snapshot) {
-      alldata = Object.values(snapshot.val())
+  function datasubmit()   {
+      let data = {}
+      data.title = document.getElementById("c1").value
+      data.description = document.getElementById("c2").value
+      data.image = document.getElementById("c5").value
+      data.director = document.getElementById("c6").value
+      onSetdata.set(data)
 
-  });
-
-  console.log(alldata)
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
   }
-}
