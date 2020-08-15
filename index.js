@@ -15,6 +15,7 @@ var firebaseConfig = {
 
   let alldata=[];
 
+  let dataFilter = []
   moviesdata.on("value",function(snapshot) {
       alldata = Object.values(snapshot.val())
 
@@ -35,8 +36,17 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+
+
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+function searchfilm(){
+    let search = document.getElementById("search").value;
+    
+}
+
