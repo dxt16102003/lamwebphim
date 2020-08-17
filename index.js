@@ -47,5 +47,6 @@ window.onclick = function (event) {
 
 function searchfilm() {
   let search = document.getElementById("search").value;
-  dataFilter = alldata.find((item) => item.title.includes(search));
+  dataFilter = alldata.filter((item) => item.title.includes(search));
+  console.log(dataFilter);
 }
